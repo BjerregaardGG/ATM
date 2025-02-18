@@ -18,6 +18,10 @@ public class Account implements IAccount {
     }
 
     @Override
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+    @Override
     public double getBalance() {
         return balance;
     }

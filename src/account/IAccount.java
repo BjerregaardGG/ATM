@@ -7,4 +7,6 @@ public interface IAccount {
     boolean withdraw(double amount);
     void deposit(double amount);
     double getBalance();
+
+    void setBalance(double v);
 }
