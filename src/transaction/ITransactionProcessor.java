@@ -1,5 +1,5 @@
 package transaction;
 
 public interface ITransactionProcessor {
-   boolean processTransaction(double amount) throws InsufficientFundsException;
+   boolean processTransaction(Account account, double amount) throws InsufficientFundsException;
 }
