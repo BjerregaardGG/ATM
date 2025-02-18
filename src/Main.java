@@ -49,7 +49,9 @@ public class Main {
                         System.out.println(MSG_INPUT_AMOUNT);
                         double amount = Double.parseDouble(scanner.next());
 
-                        transactionProcessor.processTransaction(account, amount);
+                        if(transactionProcessor.processTransaction(account, amount)){
+                            System.out.println("Transaction processed successfully, Remaining Amount: " + account.getBalance()+"$");
+                        }
                         cashDispenser.dispenseCash(amount);
                     } else {
                         System.out.println(ERR_AUTHENTICATION);

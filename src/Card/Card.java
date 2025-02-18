@@ -9,10 +9,10 @@ public class Card implements ICard{
     private String pin;
     private IAccount account;
 
-    public Card(String cardNr, String pin){
+    public Card(String cardNr, String pin, IAccount account){
         this.cardNr = cardNr;
         this.pin = pin;
-
+        this.account = account;
     }
 
 
