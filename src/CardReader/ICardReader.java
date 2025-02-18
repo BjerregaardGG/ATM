@@ -1,9 +1,9 @@
 package CardReader;
 
-import Card.Card;
+import Card.ICard;
 
 public interface ICardReader {
 
 
-    public Card validateCard(int cardNr, int pin);
+    public ICard validateCard(String cardNr);
 }

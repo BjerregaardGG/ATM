@@ -1,31 +1,39 @@
 package Card;
 
-public class Card {
+public class Card implements ICard{
 
-    private int cardNr;
-    private int password;
-    private Account account;
+    private String cardNr;
+    private String pin;
+    //private Account account;
 
-    public Card(int cardNr, int password){
+    public Card(String cardNr, String pin){
+        this.cardNr = cardNr;
+        this.pin = pin;
 
     }
 
-    public int getCardNr() {
+
+    @Override
+    public String getCardNr() {
         return cardNr;
     }
 
-    public void setCardNr(int cardNr) {
+    public void setCardNr(String cardNr) {
         this.cardNr = cardNr;
     }
 
-    public int getPassword() {
-        return password;
+    @Override
+    public String getPin() {
+        return pin;
     }
 
-    public void setPassword(int password) {
-        this.password = password;
+    public void setPin(String pin) {
+        this.pin = pin;
     }
 
+
+    /*
+    @Override
     public account getAccount() {
         return account;
     }
@@ -33,6 +41,6 @@ public class Card {
     public void setAccount(account account) {
         this.account = account;
     }
-
+*/
 
 }

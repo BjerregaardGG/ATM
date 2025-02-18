@@ -2,9 +2,9 @@ package Card;
 
 public interface ICard {
 
-    public int getCardNr();
+    public String getCardNr();
 
-    public Account getAccount();
+    //public Account getAccount();
 
-    public int getPin();
+    public String getPin();
 }
