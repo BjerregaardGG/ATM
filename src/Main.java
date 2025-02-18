@@ -44,7 +44,7 @@ public class Main {
                 ICard card = cardReader.validateCard(cardNumber);
                 if(card != null) {
                     IAccount account = card.getAccount();
-                    if(securitySystem.authenticate(card.getPin(), pinCode)){
+                    if(securitySystem.validatePin(card.getPin(), pinCode)){
 
                         System.out.println(MSG_INPUT_AMOUNT);
                         double amount = Double.parseDouble(scanner.next());

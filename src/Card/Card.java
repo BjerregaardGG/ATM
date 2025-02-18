@@ -1,10 +1,13 @@
 package Card;
 
+import account.Account;
+import account.IAccount;
+
 public class Card implements ICard{
 
     private String cardNr;
     private String pin;
-    //private Account account;
+    private IAccount account;
 
     public Card(String cardNr, String pin){
         this.cardNr = cardNr;
@@ -32,15 +35,15 @@ public class Card implements ICard{
     }
 
 
-    /*
+
     @Override
-    public account getAccount() {
+    public IAccount getAccount() {
         return account;
     }
 
-    public void setAccount(account account) {
+    public void setAccount(Account account) {
         this.account = account;
     }
-*/
+
 
 }
