@@ -1,3 +1,10 @@
+import account.IAccount;
+import Card.ICard;
+import cardreader.CardReader;
+import cardreader.ICardReader;
+import security.ISecuritySystem;
+import security.SecuritySystem;
+
 import java.util.Scanner;
 
 public class Main {

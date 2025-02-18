@@ -1,4 +1,4 @@
-package CardReader;
+package cardreader;
 
 import Card.ICard;
 

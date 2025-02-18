@@ -1,4 +1,4 @@
-package Account;
+package account;
 
 public interface IAccount {
     double getBalance = 0;
