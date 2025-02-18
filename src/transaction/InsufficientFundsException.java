@@ -2,6 +2,6 @@ package transaction;
 
 public class InsufficientFundsException extends RuntimeException {
     public InsufficientFundsException() {
-        super("No funds found");
+        super("The funds are insufficient to complete transaction.");
     }
 }
